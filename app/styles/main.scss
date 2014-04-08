@@ -1,0 +1,21 @@
+$icon-font-path: "/bower_components/bootstrap-sass/vendor/assets/fonts/bootstrap/";
+
+// bower:scss
+@import "bootstrap-sass/vendor/assets/stylesheets/bootstrap.scss";
+// endbower
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* Space out content a bit */
+body {
+    
+}
+
+.dict{
+    display:none;
+}
