@@ -20,7 +20,12 @@ gulp.task('styles', function () {
         .pipe(gulp.dest('app/styles'))
         .pipe($.size());
 });
+//angular scripts
 
+gulp.task('angular',function(){
+    return gulp.src('app/scripts/main.js')
+        .pipe(gulp.dest('dist/scripts'));
+});
 // Scripts
 gulp.task('scripts', function () {
     return gulp.src('app/scripts/**/*.js')
@@ -66,7 +71,7 @@ gulp.task('clean', function () {
 });
 
 // Build
-gulp.task('build', ['html', 'images']);
+gulp.task('build', ['html', 'images', 'angular']);
 
 // Default task
 gulp.task('default', ['clean'], function () {
